@@ -79,6 +79,16 @@ public class DefaultSqlSession implements SqlSession{
 
     @Override
     public <T> List<T> selectList(String statement, Object parameter) {
+        XNode xNode = mapperElement.get(statement);
+        Map<Integer, String> parameterMap = xNode.getParameter();
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(xNode.getSql());
+            buildParameter(preparedStatement, parameter, parameterMap);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            return resultSet2Obj(resultSet, Class.forName(xNode.getResultType()));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return null;
     }
 
