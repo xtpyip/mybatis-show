@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis-step-06" />
         <module name="mybatis-step-05" />
+        <module name="mybatis-step-07" />
         <module name="mybatis-step-02" />
         <module name="mybatis-step-04" />
         <module name="mybatis" />
