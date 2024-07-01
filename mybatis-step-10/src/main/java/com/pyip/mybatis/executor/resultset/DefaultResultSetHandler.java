@@ -31,7 +31,6 @@ public class DefaultResultSetHandler implements ResultSetHandler {
         ResultSet resultSet = stmt.getResultSet();
         return resultSet2Obj(resultSet, mappedStatement.getResultType());
     }
-
     private <T> List<T> resultSet2Obj(ResultSet resultSet, Class<?> clazz) {
         List<T> list = new ArrayList<>();
         try {
@@ -59,4 +58,5 @@ public class DefaultResultSetHandler implements ResultSetHandler {
         }
         return list;
     }
+
 }
