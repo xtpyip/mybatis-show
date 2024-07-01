@@ -5,13 +5,15 @@ import java.sql.SQLException;
 
 /**
  * @author 小傅哥，微信：fustack
- * @description 类型处理器
+ * @description String类型处理器
  * @github https://github.com/fuzhengwei
  * @Copyright 公众号：bugstack虫洞栈 | 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
  */
-public interface TypeHandler<T> {
+public class StringTypeHandler extends BaseTypeHandler<String> {
 
-    // 设置参数
-    void setParameter(PreparedStatement ps, int i, T parameter, JdbcType jdbcType) throws SQLException;
+    @Override
+    protected void setNonNullParameter(PreparedStatement ps, int i, String parameter, JdbcType jdbcType) throws SQLException {
+        ps.setString(i, parameter);
+    }
 
 }
