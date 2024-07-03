@@ -60,6 +60,7 @@
   ```
 
 - ![](img\plugin.png)
+- ![](img\invocation.png)
 
 - 自定义插件相关类
 
