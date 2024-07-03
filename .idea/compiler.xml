@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis-step-06" />
+        <module name="mybatis-step-17" />
         <module name="mybatis-step-05" />
         <module name="mybatis-step-16" />
         <module name="mybatis-step-08" />
