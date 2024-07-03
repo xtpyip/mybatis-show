@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="userService" class="com.pyip.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"></property>
+    </bean>
+
+    <bean id="userDao" class="com.pyip.dao.impl.UserDaoImpl">
+        <property name="username" value="zhangsan"></property>
+        <property name="password" value="123456"></property>
+    </bean>
+
+
+
+</beans>

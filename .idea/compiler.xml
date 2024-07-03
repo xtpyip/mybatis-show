@@ -25,8 +25,10 @@
         <module name="mybatis-step-20" />
         <module name="mybatis-step-11" />
         <module name="mybatis-step-22" />
+        <module name="spring-ioc-step" />
         <module name="mybatis-step-10" />
         <module name="mybatis-step-21" />
+        <module name="spring-ioc-step-next" />
         <module name="mybatis-step-09" />
       </profile>
     </annotationProcessing>

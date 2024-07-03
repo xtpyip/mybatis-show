@@ -27,6 +27,8 @@
         <option value="$PROJECT_DIR$/mybatis-step-19/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis-step-20/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis-step-21/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-ioc-step/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-ioc-step-next/pom.xml" />
       </list>
     </option>
   </component>
